@@ -12,7 +12,7 @@ body {
     display: inline-block;
     position: sticky;
     top: 0;
-    z-index: 2;
+    
 
 
   }
@@ -45,11 +45,11 @@ body {
   }
   #space {
     background: #266ef6;
-    z-index: 1;
+    
   }
   #power {
     background: #e429f2;
-    z-index: 1;
+    
   }
   #soul {
     background: #ff8b00;
@@ -91,27 +91,48 @@ body {
       position: absolute;
       right: 0;
       bottom: 150px;
-      /* margin: 0; */
   }
 
-  #mind :nth-child(1){
-      position: sticky 0vw;
-      top: 0;
+  #mind{
+      position: fixed;
+      right: 0;
   }
 
   #time{
     position: fixed;
     right: 0;
     top: 0;
-
   }
 
-  .one{
+  /* .one{ */
+    h1{
       position: sticky;
       top: 0;
   }
 
-  .two{
+  /* .two{
     position: sticky;
     top: 0;
+} */
+
+h1{
+    z-index: 1;
+    /* totaly didn't mean to cheat on this one. I adjusted z index on the copy pasta CSS from slack */
+}
+
+/* Bonus Content */
+#reality{
+    z-index: 3;
+}
+
+#soul{
+    z-index: 1;
+}
+#time{
+    z-index: 2;
+}
+
+h2{
+    position: sticky;
+    top: 65px;
 }
